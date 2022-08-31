@@ -1,0 +1,54 @@
+:root{
+  --button-default : #683939;
+  --button-default-hover : #371f1f;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body.light{
+  background-color: rgb(240, 239, 239);
+}
+body.dark{
+  background-color: darkred;
+}
+button{
+  outline: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.switcherBtn{
+  border:1px solid #ddd;
+  padding: 8px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 20px;
+  transition: .45s;
+  -webkit-transition: .45s;
+  -moz-transition: .45s;
+  -ms-transition: .45s;
+  -o-transition: .45s;
+  background-color: var(--button-default);
+  color: #fff;
+}
+.switcherBtn:hover{
+  background-color: var(--button-default-hover);
+  box-shadow: 0 10px 50px rgba(0,0,0,.2);
+}
+body.dark p,
+body.dark span {
+  color: #fff;
+}
